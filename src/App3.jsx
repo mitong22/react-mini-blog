@@ -7,6 +7,7 @@ function App(){
   return (
     <div>
       {showTimer && <Timer />}
+      <input type="text" value={showTimer}/>
       <button type="button" onClick={ () => setShowTimer(!showTimer)}>
         toggle timer
       </button>
