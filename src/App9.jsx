@@ -35,6 +35,7 @@ function App() {
 
         const nextStudents = await response.json()
         console.log(nextStudents);
+        
         setStudents(nextStudents)
         setRequestStatus('success')
       } catch (error) {
